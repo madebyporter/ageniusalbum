@@ -1,0 +1,140 @@
+.sc-player {
+  font: 12px arial, sans-serif;
+	background: #222;
+  color: #333;
+  font-size: 0.6em;
+  line-height: 1.6em;
+  font-weight: bold;
+}
+
+.sc-player a {
+  text-decoration: none;
+  color: #dfd3bf;
+}
+
+/* scrubber */
+
+.sc-scrubber {
+  background-color: #111;
+}
+
+.sc-scrubber .sc-time-span {
+  background-color: #eaeae8;
+}
+
+.sc-scrubber .sc-time-span img {
+  height: 50px;
+  width: 100%;
+  background-color: #000;
+}
+
+.sc-scrubber .sc-buffer, .sc-scrubber .sc-played {
+  background-color: #2b1b2a;
+  opacity: 0.4;
+}
+
+.sc-scrubber .sc-played {
+  background-color: #000;
+  opacity: 0.4;
+}
+
+/* controls */
+
+.sc-player .sc-controls a {
+  color: transparent;
+  background: url('img/play.png');
+}
+
+
+
+.sc-player .sc-controls a.sc-pause {
+  background: url('img/play.png');
+}
+
+
+
+.sc-player.playing .sc-controls a.sc-pause{
+  background: url('img/pause.png');
+}
+
+
+.sc-scrubber .sc-time-indicators{
+  color: #888;
+  padding: 4px;
+}
+
+/* Track listings*/
+
+.sc-player ol.sc-trackslist li {
+  background: #eee;
+  padding: 0;
+	border-bottom: 1px solid #ccc;
+}
+
+/* ACTIVE PAUSE STYLES */
+.sc-player ol.sc-trackslist li.active { /* The whole row */
+	background: #222;
+	color: #c34550;
+	padding: 0;
+}
+
+.sc-player ol.sc-trackslist li.active a { /* The A tag in row */
+  	color: #c37e84;
+}
+
+/* ACTIVE PLAYING STYLES */
+.sc-player.playing ol.sc-trackslist li.active {
+  	background: #222;
+	color: #c34550;
+}
+
+.sc-player.playing ol.sc-trackslist li.active a {
+	color: #c34550;
+}
+
+.sc-track-duration {
+  text-align: right;
+  float: right;
+  padding: 0 5px;
+  margin-left: 5px;
+  display: none;
+}
+
+/* Track info*/
+
+.sc-player .sc-info{
+  background: #fff;
+  opacity: 0.9;
+}
+
+.sc-player .sc-info-toggle{
+  background: #fff;
+  color: #003399;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-box-shadow: 1px 1px 4px #ccc;
+  -webkit-box-shadow: 1px 1px 4px #ccc;
+  padding: 4px;
+}
+
+.sc-player .sc-info-close{
+  background: #003399;
+  color: #fff;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  padding: 2px 4px;
+  font-weight: bold;
+}
+
+/* remote control */
+
+a.sc-remote-link {
+  background: url('img/play.png') top left no-repeat;
+  padding-left: 20px;
+  text-decoration: none;
+}
+
+a.sc-remote-link.playing{
+  background-image: url('img/pause.png');
+}
+

@@ -1,0 +1,85 @@
+/* DESKTOP */
+@media all and (max-width: 1920px) and (min-width: 960px) {
+  	ol.sc-trackslist li a {
+		font-size: 99%;
+		line-height: 106%;
+		}
+	.sc-player ol.sc-trackslist{
+		}
+	.sc-player ol.sc-trackslist li a:hover {
+		padding: 20px 0;
+		display: block;
+		}
+	.sc-player ol.sc-trackslist li:hover a {
+		background-color: #ddd;
+		padding: 0;
+		color: #dfc596;
+		padding: 20px 0;
+		}
+	.sc-player ol.sc-trackslist li.active { /* The whole row */
+		height: 300px;
+		}
+	.sc-player.playing ol.sc-trackslist li.active:hover {
+		background: #222;
+		color: #c34550;
+		}
+	.sc-player.playing ol.sc-trackslist li.active:hover a {
+		background: #222;
+		color: #c34550;
+		}
+	.sc-player ol.sc-trackslist li.active:hover,
+	.sc-player ol.sc-trackslist li.active:hover > a { /* The whole row hover */
+		background: #222;
+		color: #c37e84;
+	    }
+	.sc-player ol.sc-trackslist li.active a:hover { /* The A tag hover in row */
+		background: #222;
+		}	
+	.sc-player .sc-info-toggle:hover{
+	  	background: #003399;
+	  	color: #eee;
+		}
+	.sc-player .sc-controls a:hover {
+	  	background: url('img/play-hover.png');
+		}
+	.sc-player .sc-controls a.sc-pause:hover{
+	    background: url('img/play-hover.png');
+		}
+	.sc-player.playing .sc-controls a.sc-pause:hover{
+	    background: url('img/pause-hover.png');
+		}
+		
+	.genius_download .download_button {
+		width: 50%;
+		line-height: 275%;
+		font-size: 2em;
+		}
+}
+
+/* MOBILE & IPHONE SCREENS */
+@media all and (max-width: 960px) and (min-width: 320px) {
+	.sc-player ol.sc-trackslist {
+		position: absolute;
+		}
+	.sc-player ol.sc-trackslist li a {
+		font-size: 39%;
+		line-height: 124%;
+		}
+	.sc-player ol.sc-trackslist li:hover {
+		padding: 20px 0;
+		display: block;
+		}
+	.sc-player ol.sc-trackslist li a:hover {
+		padding: 20px 0;
+		display: block;
+		}
+		
+	.genius_download .genius_logo {
+		display: none;
+	}
+	.genius_download .download_button {
+		width: 100%;
+		font-size: 2em;
+		line-height: 440%;
+	}
+}
