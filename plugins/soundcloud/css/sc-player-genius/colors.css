@@ -9,7 +9,12 @@
 
 .sc-player a {
   text-decoration: none;
-  color: #dfd3bf;
+  color: #b7a992;
+}
+
+.sc-player a:hover {
+  text-decoration: none;
+  color: #b7a992;
 }
 
 /* scrubber */
@@ -23,8 +28,6 @@
 }
 
 .sc-scrubber .sc-time-span img {
-  height: 50px;
-  width: 100%;
   background-color: #000;
 }
 
@@ -60,14 +63,13 @@
 
 .sc-scrubber .sc-time-indicators{
   color: #888;
-  padding: 4px;
+  
 }
 
 /* Track listings*/
 
 .sc-player ol.sc-trackslist li {
   background: #eee;
-  padding: 0;
 	border-bottom: 1px solid #ccc;
 }
 
@@ -75,21 +77,25 @@
 .sc-player ol.sc-trackslist li.active { /* The whole row */
 	background: #222;
 	color: #c34550;
-	padding: 0;
 }
 
 .sc-player ol.sc-trackslist li.active a { /* The A tag in row */
-  	color: #c37e84;
+  color: #c37e84;
 }
 
 /* ACTIVE PLAYING STYLES */
 .sc-player.playing ol.sc-trackslist li.active {
-  	background: #222;
-	color: #c34550;
+  background: #222;
+  color: #c34550;
 }
 
 .sc-player.playing ol.sc-trackslist li.active a {
-	color: #c34550;
+	color: #b53039;
+
+}
+
+.sc-player.playing ol.sc-trackslist li.active a:hover {
+  text-shadow: 0 0 25px rgba(0,0,0,0.5);
 }
 
 .sc-track-duration {

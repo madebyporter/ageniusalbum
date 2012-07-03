@@ -1,0 +1,96 @@
+doctype html
+html
+  head
+    title A Genius Album
+    meta content="yes" name="apple-mobile-web-app-capable"
+    meta content="black" name="apple-mobile-web-app-status-bar-style"
+    link href="plugins/soundcloud/css/sc-player-genius.css" rel="stylesheet" type="text/css"
+    link href="common/css/styles.css" rel="stylesheet" type="text/css"
+    link href="common/css/bootstrap.min.css" rel="stylesheet" type="text/css"
+    link href="http://fonts.googleapis.com/css?family=Oswald:400,700,300" rel="stylesheet" type="text/css"
+  body#home
+    .loading-player
+      #loading_icon
+        img src="/common/img/icon-loading.gif" alt="Loading"
+      span Loading Player
+    .start-player
+      a href="#" Click to Play!
+    .scroll_map 
+      #map-since_i_found_you.track1
+      .track2
+      .track3
+      .track4
+      .track5
+      .track6
+      .track7
+      .track8
+      .track9
+      .track10
+    .marketing.background
+      .copy
+        span.writing
+          | Genius: Hiphop Beat Tape. Produced by Chris Porter. Download the MP3 version.
+          a.marketing_download_button data-toggle="modal" href="#download_modal"
+      .album_image
+    #genius_wrapper
+      .sc-player
+        .sc-trackslist
+        .bottom
+          .sc-scrubber
+          .genius_download
+        a href="http://soundcloud.com/tgchrisporter/since-i-found-you"
+        a href="http://soundcloud.com/tgchrisporter/california-dreaming"
+        a href="http://soundcloud.com/tgchrisporter/leave-you-behind"
+        a href="http://soundcloud.com/tgchrisporter/the-come-up"
+        a href="http://soundcloud.com/tgchrisporter/back-at-you"
+        a href="http://soundcloud.com/tgchrisporter/deadly-combination"
+        a href="http://soundcloud.com/tgchrisporter/we-got-it"
+        a href="http://soundcloud.com/tgchrisporter/gotten-over-me-1"
+        a href="http://soundcloud.com/tgchrisporter/obscured-pneuma"
+        a href="http://soundcloud.com/tgchrisporter/you-need-me"
+      .genius_download
+        a.download_button data-toggle="modal" href="#download_modal" Download
+        a.twitter_button href="http://www.twitter.com/tgchrisporter"
+        a.soundcloud_button href="http://www.soundcloud.com/tgchrisporter"
+        ul.track_info
+          li.track_info_button
+            span.info_text Track Info
+            ol.track_info_viewer
+              li.track-since_i_found_you
+                | Since I Found You Info
+              li.track-california_dreaming
+                | California Dreaming Info
+              li.track-leave_you_behind
+                | leave
+    #download_modal.modal.fade.hide
+      .modal-header
+        button.close data-dismiss="modal" type="button"
+        h3 Modal header
+      .modal-body
+        p One fine body…
+      .modal-footer
+        a.btn data-dismiss="modal" href="#"
+        a.btn.btn-primary href="#"
+    #help_center
+      .help_icon
+        i.help-icon-white
+        span Click a song title to play and pause
+      #help_modal.modal.fade.hide
+        .modal-header
+          button.close data-dismiss="modal" type="button"
+          h3 Modal header
+        .modal-body
+          p One fine body…
+        .modal-footer
+          a.btn data-dismiss="modal" href="#"
+          a.btn.btn-primary href="#"
+    /! / JAVASCRIPT
+    script src="http://code.jquery.com/jquery.js" type="text/javascript"
+    script src="common/js/bootstrap.min.js" type="text/javascript"
+    script src="plugins/soundcloud/js/soundcloud.player.api.js" type="text/javascript"
+    script src="plugins/soundcloud/js/sc-player.js" type="text/javascript"
+    script src="common/js/jquery.scrollTo-1.4.2-min.js" type="text/javascript"
+    script src="common/js/jquery.localscroll-1.2.7-min.js" type="text/javascript"
+    script src="common/js/jquery.parallax-1.1.js" type="text/javascript"
+    script src="common/js/waypoints.min.js" type="text/javascript"
+    script src="common/js/init.js" type="text/javascript"
